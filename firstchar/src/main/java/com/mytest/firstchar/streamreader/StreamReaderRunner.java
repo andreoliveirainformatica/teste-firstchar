@@ -1,8 +1,9 @@
-package com.netshoes.firstchar.streamreader;
+package com.mytest.firstchar.streamreader;
 
 
-import com.netshoes.firstchar.exception.CharacterNotFoundException;
+import com.mytest.firstchar.exception.CharacterNotFoundException;
 
+import java.security.InvalidParameterException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
@@ -15,12 +16,12 @@ public class StreamReaderRunner {
     public static Character execute(final String input) {
 
         if (Objects.isNull(input)) {
-            throw new RuntimeException("Invalid String");
+            throw new InvalidParameterException("Invalid String");
         }
 
         List<Character> vowels = new ArrayList<>();
         List<Character> findChars = new ArrayList<>();
-        Character[] predecessor = new Character[2];
+        Character[] predecessor = new Character[1];
 
         final StreamReader streamReader = new StreamReaderImpl(input);
         while (streamReader.hasNext()) {

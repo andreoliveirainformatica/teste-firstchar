@@ -1,4 +1,4 @@
-package com.netshoes.firstchar.exception;
+package com.mytest.firstchar.exception;
 
 public class CharacterNotFoundException extends RuntimeException {
     public CharacterNotFoundException(final String messagge) {

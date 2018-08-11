@@ -1,7 +1,9 @@
-package com.netshoes.firstchar.streamreader;
+package com.mytest.firstchar.streamreader;
 
-import com.netshoes.firstchar.exception.CharacterNotFoundException;
+import com.mytest.firstchar.exception.CharacterNotFoundException;
 import org.junit.Test;
+
+import java.security.InvalidParameterException;
 
 public class StreamReaderRunnerTest {
 
@@ -10,7 +12,7 @@ public class StreamReaderRunnerTest {
         StreamReaderRunner.execute("abeabe");
     }
 
-    @Test(expected = RuntimeException.class)
+    @Test(expected = InvalidParameterException.class)
     public void invalidInputTest() {
         StreamReaderRunner.execute(null);
     }

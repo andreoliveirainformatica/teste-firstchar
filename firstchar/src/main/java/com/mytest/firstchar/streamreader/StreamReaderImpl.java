@@ -1,4 +1,4 @@
-package com.netshoes.firstchar.streamreader;
+package com.mytest.firstchar.streamreader;
 
 public class StreamReaderImpl implements StreamReader {
 
