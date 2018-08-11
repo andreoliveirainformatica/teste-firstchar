@@ -21,7 +21,7 @@ public class StreamReaderRunner {
 
         List<Character> vowels = new ArrayList<>();
         List<Character> findChars = new ArrayList<>();
-        Character[] predecessor = new Character[1];
+        Character[] predecessor = new Character[2];
 
         final StreamReader streamReader = new StreamReaderImpl(input);
         while (streamReader.hasNext()) {
