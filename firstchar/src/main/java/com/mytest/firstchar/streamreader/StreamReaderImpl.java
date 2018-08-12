@@ -3,18 +3,18 @@ package com.mytest.firstchar.streamreader;
 public class StreamReaderImpl implements StreamReader {
 
 	private String input;
-	private int lastGetCharacterIndex = 0;
+	private int nextGetCharacterIndex = 0;
 
 	public StreamReaderImpl(final String input) {
 		this.input = input;
 	}
 
 	public char getNext() {
-		return input.charAt(lastGetCharacterIndex++);
+		return input.charAt(nextGetCharacterIndex++);
 	}
 
 	public boolean hasNext() {
-		return  input.length() > lastGetCharacterIndex;
+		return  input.length() > nextGetCharacterIndex;
 	}
 
 }
